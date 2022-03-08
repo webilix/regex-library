@@ -2,7 +2,7 @@ import { find, get, replace, verify } from '../method';
 import { rxDate } from '../regex';
 
 export const DATE = {
-    get: (fullLine: boolean = false, flags?: string): RegExp => get(rxDate, fullLine, flags),
+    get: (fullLine: boolean = true, flags?: string): RegExp => get(rxDate, fullLine, flags),
 
     verify: (text: string): boolean => verify(rxDate, text),
 

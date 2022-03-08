@@ -2,7 +2,7 @@ import { find, get, replace, verify } from '../method';
 import { rxNumeric } from '../regex';
 
 export const NUMERIC = {
-    get: (minLength?: number, maxLength?: number, fullLine: boolean = false, flags?: string): RegExp =>
+    get: (minLength?: number, maxLength?: number, fullLine: boolean = true, flags?: string): RegExp =>
         get(rxNumeric(minLength, maxLength), fullLine, flags),
 
     verify: (text: string, minLength?: number, maxLength?: number): boolean =>

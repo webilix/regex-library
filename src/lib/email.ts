@@ -2,7 +2,7 @@ import { find, get, replace, verify } from '../method';
 import { rxEmail } from '../regex';
 
 export const EMAIL = {
-    get: (fullLine: boolean = false, flags?: string): RegExp => get(rxEmail, fullLine, flags),
+    get: (fullLine: boolean = true, flags?: string): RegExp => get(rxEmail, fullLine, flags),
 
     verify: (text: string): boolean => verify(rxEmail, text),
 

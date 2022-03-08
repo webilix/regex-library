@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.replace = exports.find = exports.verify = exports.get = void 0;
-const get = (pattern, fullLine = false, flags) => fullLine ? new RegExp(`^${pattern}$`, flags) : new RegExp(pattern, flags);
+const get = (pattern, fullLine = true, flags) => fullLine ? new RegExp(`^${pattern}$`, flags) : new RegExp(pattern, flags);
 exports.get = get;
 const verify = (pattern, text, flags) => (0, exports.get)(pattern, true, flags).test(text);
 exports.verify = verify;

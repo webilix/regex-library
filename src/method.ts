@@ -1,4 +1,4 @@
-export const get = (pattern: string, fullLine: boolean = false, flags?: string): RegExp =>
+export const get = (pattern: string, fullLine: boolean = true, flags?: string): RegExp =>
     fullLine ? new RegExp(`^${pattern}$`, flags) : new RegExp(pattern, flags);
 
 export const verify = (pattern: string, text: string, flags?: string): boolean => get(pattern, true, flags).test(text);

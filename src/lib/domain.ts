@@ -2,7 +2,7 @@ import { find, get, replace, verify } from '../method';
 import { rxDomain } from '../regex';
 
 export const DOMAIN = {
-    get: (fullLine: boolean = false, flags?: string): RegExp => get(rxDomain, fullLine, flags),
+    get: (fullLine: boolean = true, flags?: string): RegExp => get(rxDomain, fullLine, flags),
 
     verify: (text: string): boolean => verify(rxDomain, text),
 

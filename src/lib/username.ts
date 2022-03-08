@@ -6,7 +6,7 @@ export const USERNAME = {
         length: number = 3,
         useDash: boolean = true,
         useDot: boolean = true,
-        fullLine: boolean = false,
+        fullLine: boolean = true,
         flags?: string,
     ): RegExp => get(rxUsername(length, useDash, useDot), fullLine, flags),
 

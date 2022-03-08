@@ -7,7 +7,7 @@ export const PASSWORD = {
         forceLowerCase: boolean = true,
         forceUpperCase: boolean = true,
         forceNumber: boolean = true,
-        fullLine: boolean = false,
+        fullLine: boolean = true,
         flags?: string,
     ): RegExp => get(rxPassword(length, forceLowerCase, forceUpperCase, forceNumber), fullLine, flags),
 

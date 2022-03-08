@@ -2,7 +2,7 @@ import { find, get, replace, verify } from '../method';
 import { rxMobile } from '../regex';
 
 export const MOBILE = {
-    get: (fullLine: boolean = false, flags?: string): RegExp => get(rxMobile, fullLine, flags),
+    get: (fullLine: boolean = true, flags?: string): RegExp => get(rxMobile, fullLine, flags),
 
     verify: (text: string): boolean => verify(rxMobile, text),
 

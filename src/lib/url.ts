@@ -2,8 +2,7 @@ import { find, get, replace, verify } from '../method';
 import { rxUrl } from '../regex';
 
 export const URL = {
-    get: (full: boolean = false, fullLine: boolean = false, flags?: string): RegExp =>
-        get(rxUrl(full), fullLine, flags),
+    get: (full: boolean = false, fullLine: boolean = true, flags?: string): RegExp => get(rxUrl(full), fullLine, flags),
 
     verify: (text: string, full: boolean = false): boolean => verify(rxUrl(full), text),
 

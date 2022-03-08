@@ -1,0 +1,30 @@
+{
+    "name": "regex-library",
+    "version": "1.0.0",
+    "description": "Regular expression library",
+    "main": "./dist/index.js",
+    "scripts": {
+        "start": "tsc --watch",
+        "build": "tsc",
+        "test": "jest --verbose ./dist/test"
+    },
+    "keywords": [
+        "regex"
+    ],
+    "author": "Ali Amirnezhad",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/webilix/regex-library.git"
+    },
+    "bugs": {
+        "url": "https://github.com/webilix/regex-library/issues"
+    },
+    "homepage": "https://github.com/webilix/regex-library#readme",
+    "devDependencies": {
+        "@types/jest": "^27.4.1",
+        "@types/typescript": "^2.0.0",
+        "jest": "^27.5.1",
+        "typescript": "^4.6.2"
+    }
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"method.d.ts","sourceRoot":"","sources":["../src/method.ts"],"names":[],"mappings":"AAAA,eAAO,MAAM,GAAG,YAAa,MAAM,aAAY,OAAO,iCAA2B,MACJ,CAAC;AAE9E,eAAO,MAAM,MAAM,YAAa,MAAM,QAAQ,MAAM,iCAAmB,OAA+C,CAAC;AAEvH,eAAO,MAAM,IAAI,YAAa,MAAM,QAAQ,MAAM,iCAAmB,MAAM,EACpB,CAAC;AAExD,eAAO,MAAM,OAAO,YAAa,MAAM,QAAQ,MAAM,gBAAe,MAAM,iCAAwB,MAClC,CAAC"}

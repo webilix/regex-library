@@ -1,6 +1,6 @@
 {
     "name": "regex-library",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Regular expression library",
     "main": "./dist/index.js",
     "scripts": {
@@ -9,7 +9,9 @@
         "test": "jest --verbose ./dist/test"
     },
     "keywords": [
-        "regex"
+        "regex",
+        "RegExp",
+        "Regular Expression"
     ],
     "author": "Ali Amirnezhad",
     "license": "MIT",

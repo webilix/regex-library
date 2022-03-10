@@ -1,4 +1,4 @@
-export declare const RrgX: {
+export declare const RegX: {
     DATE: {
         get: (fullLine?: boolean, flags?: string | undefined) => RegExp;
         verify: (text: string) => boolean;

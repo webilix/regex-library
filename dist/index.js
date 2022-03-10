@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.RrgX = void 0;
+exports.RegX = void 0;
 const date_1 = require("./lib/date");
 const domain_1 = require("./lib/domain");
 const email_1 = require("./lib/email");
@@ -11,7 +11,7 @@ const password_1 = require("./lib/password");
 const time_1 = require("./lib/time");
 const url_1 = require("./lib/url");
 const username_1 = require("./lib/username");
-exports.RrgX = {
+exports.RegX = {
     DATE: date_1.DATE,
     DOMAIN: domain_1.DOMAIN,
     EMAIL: email_1.EMAIL,

@@ -9,7 +9,7 @@ import { TIME } from './lib/time';
 import { URL } from './lib/url';
 import { USERNAME } from './lib/username';
 
-export const RrgX = {
+export const RegX = {
     DATE,
     DOMAIN,
     EMAIL,

@@ -1,12 +1,23 @@
-export * from './method';
+import { DATE } from './lib/date';
+import { DOMAIN } from './lib/domain';
+import { EMAIL } from './lib/email';
+import { JSON_DATE } from './lib/json-date';
+import { MOBILE } from './lib/mobile';
+import { NUMERIC } from './lib/numeric';
+import { PASSWORD } from './lib/password';
+import { TIME } from './lib/time';
+import { URL } from './lib/url';
+import { USERNAME } from './lib/username';
 
-export * from './lib/date';
-export * from './lib/domain';
-export * from './lib/email';
-export * from './lib/json-date';
-export * from './lib/mobile';
-export * from './lib/numeric';
-export * from './lib/password';
-export * from './lib/time';
-export * from './lib/url';
-export * from './lib/username';
+export const RrgX = {
+    DATE,
+    DOMAIN,
+    EMAIL,
+    JSON_DATE,
+    MOBILE,
+    NUMERIC,
+    PASSWORD,
+    TIME,
+    URL,
+    USERNAME,
+};

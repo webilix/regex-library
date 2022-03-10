@@ -1,28 +1,26 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __exportStar = (this && this.__exportStar) || function(m, exports) {
-    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(require("./method"), exports);
-__exportStar(require("./lib/date"), exports);
-__exportStar(require("./lib/domain"), exports);
-__exportStar(require("./lib/email"), exports);
-__exportStar(require("./lib/json-date"), exports);
-__exportStar(require("./lib/mobile"), exports);
-__exportStar(require("./lib/numeric"), exports);
-__exportStar(require("./lib/password"), exports);
-__exportStar(require("./lib/time"), exports);
-__exportStar(require("./lib/url"), exports);
-__exportStar(require("./lib/username"), exports);
+exports.RrgX = void 0;
+const date_1 = require("./lib/date");
+const domain_1 = require("./lib/domain");
+const email_1 = require("./lib/email");
+const json_date_1 = require("./lib/json-date");
+const mobile_1 = require("./lib/mobile");
+const numeric_1 = require("./lib/numeric");
+const password_1 = require("./lib/password");
+const time_1 = require("./lib/time");
+const url_1 = require("./lib/url");
+const username_1 = require("./lib/username");
+exports.RrgX = {
+    DATE: date_1.DATE,
+    DOMAIN: domain_1.DOMAIN,
+    EMAIL: email_1.EMAIL,
+    JSON_DATE: json_date_1.JSON_DATE,
+    MOBILE: mobile_1.MOBILE,
+    NUMERIC: numeric_1.NUMERIC,
+    PASSWORD: password_1.PASSWORD,
+    TIME: time_1.TIME,
+    URL: url_1.URL,
+    USERNAME: username_1.USERNAME,
+};
 //# sourceMappingURL=index.js.map

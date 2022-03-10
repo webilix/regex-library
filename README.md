@@ -18,8 +18,8 @@ npm install --save regex-library
 ## Usage
 
 ```typescript
-import * as rx from 'regex-library';
-rx.DATE.verify('2000-01-01');
+import { RrgX } from 'regex-library';
+RrgX.DATE.verify('2000-01-01');
 ```
 
 ## Regular Expressions

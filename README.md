@@ -27,6 +27,7 @@ RegX.DATE.verify('2000-01-01');
 -   DATE
 -   DOMAIN
 -   EMAIL
+-   IP4
 -   JSON_DATE
 -   MOBILE
 -   NUMERIC

@@ -4,6 +4,7 @@ exports.RegX = void 0;
 const date_1 = require("./lib/date");
 const domain_1 = require("./lib/domain");
 const email_1 = require("./lib/email");
+const ip4_1 = require("./lib/ip4");
 const json_date_1 = require("./lib/json-date");
 const mobile_1 = require("./lib/mobile");
 const numeric_1 = require("./lib/numeric");
@@ -15,6 +16,7 @@ exports.RegX = {
     DATE: date_1.DATE,
     DOMAIN: domain_1.DOMAIN,
     EMAIL: email_1.EMAIL,
+    IP4: ip4_1.IP4,
     JSON_DATE: json_date_1.JSON_DATE,
     MOBILE: mobile_1.MOBILE,
     NUMERIC: numeric_1.NUMERIC,

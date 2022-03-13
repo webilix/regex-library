@@ -8,4 +8,5 @@ export declare const rxUsername: (length?: number, useDash?: boolean, useDot?: b
 export declare const rxPassword: (length?: number, forceLowerCase?: boolean, forceUpperCase?: boolean, forceNumber?: boolean) => string;
 export declare const rxDomain: string;
 export declare const rxUrl: (full?: boolean) => string;
+export declare const rxIP4: string;
 //# sourceMappingURL=regex.d.ts.map

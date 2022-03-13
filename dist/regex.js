@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.rxUrl = exports.rxDomain = exports.rxPassword = exports.rxUsername = exports.rxNumeric = exports.rxMobile = exports.rxEmail = exports.rxJsonDate = exports.rxTime = exports.rxDate = void 0;
+exports.rxIP4 = exports.rxUrl = exports.rxDomain = exports.rxPassword = exports.rxUsername = exports.rxNumeric = exports.rxMobile = exports.rxEmail = exports.rxJsonDate = exports.rxTime = exports.rxDate = void 0;
 exports.rxDate = `[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])`;
 exports.rxTime = `([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]`;
 exports.rxJsonDate = exports.rxDate + `T` + exports.rxTime + `.[0-9][0-9][0-9]Z`;
@@ -41,4 +41,8 @@ const rxUrl = (full = false) => full
     ? `https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9]{2,}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=,]*)`
     : `https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9]{2,}\\b[/]{0,1}`;
 exports.rxUrl = rxUrl;
+exports.rxIP4 = `(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.` +
+    `(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.` +
+    `(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.` +
+    `(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)`;
 //# sourceMappingURL=regex.js.map

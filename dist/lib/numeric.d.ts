@@ -1,7 +1,7 @@
 export declare const NUMERIC: {
-    get: (minLength?: number | undefined, maxLength?: number | undefined, fullLine?: boolean, flags?: string | undefined) => RegExp;
-    verify: (text: string, minLength?: number | undefined, maxLength?: number | undefined) => boolean;
-    find: (text: string, minLength?: number | undefined, maxLength?: number | undefined) => string[];
-    replace: (text: string, replaceWith?: string, minLength?: number | undefined, maxLength?: number | undefined) => string;
+    get: (minLength?: number, maxLength?: number, fullLine?: boolean, flags?: string) => RegExp;
+    verify: (text: string, minLength?: number, maxLength?: number) => boolean;
+    find: (text: string, minLength?: number, maxLength?: number) => string[];
+    replace: (text: string, replaceWith?: string, minLength?: number, maxLength?: number) => string;
 };
 //# sourceMappingURL=numeric.d.ts.map

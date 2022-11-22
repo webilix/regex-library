@@ -58,8 +58,8 @@ export declare const RegX: {
         replace: (text: string, replaceWith?: string, full?: boolean) => string;
     };
     USERNAME: {
-        get: (length?: number, useDash?: boolean, useDot?: boolean, fullLine?: boolean, flags?: string | undefined) => RegExp;
-        verify: (text: string, length?: number, useDash?: boolean, useDot?: boolean) => boolean;
+        get: (length?: number, useDash?: boolean, useDot?: boolean, startWithChar?: boolean, endWithChar?: boolean, fullLine?: boolean, flags?: string | undefined) => RegExp;
+        verify: (text: string, length?: number, useDash?: boolean, useDot?: boolean, startWithChar?: boolean, endWithChar?: boolean) => boolean;
     };
 };
 //# sourceMappingURL=index.d.ts.map

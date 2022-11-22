@@ -22,10 +22,12 @@ const rxNumeric = (minLength, maxLength) => {
     return `[0-9]{${minLength}${minLength === maxLength ? '' : `,${maxLength}`}}`;
 };
 exports.rxNumeric = rxNumeric;
-const rxUsername = (length = 3, useDash = true, useDot = true) => {
+const rxUsername = (length = 3, useDash = true, useDot = true, startWithChar = true, endWithChar = true) => {
     if (length < 3)
         throw new Error('length must be equal or bigger than 3');
-    return `[a-z]{1}[a-z0-9${useDash ? '-' : ''}${useDot ? '.' : ''}]{${length - 2},}[a-z]{1}`;
+    const middleLength = length - (startWithChar ? 1 : 0) - (endWithChar ? 1 : 0);
+    const middle = `[a-z0-9${useDash ? '-' : ''}${useDot ? '.' : ''}]{${middleLength},}`;
+    return `${startWithChar ? '[a-z]{1}' : ''}${middle}${endWithChar ? '[a-z]{1}' : ''}`;
 };
 exports.rxUsername = rxUsername;
 const rxPassword = (length = 8, forceLowerCase = true, forceUpperCase = true, forceNumber = true) => {

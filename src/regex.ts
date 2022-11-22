@@ -23,9 +23,17 @@ export const rxNumeric = (minLength?: number, maxLength?: number): string => {
     return `[0-9]{${minLength}${minLength === maxLength ? '' : `,${maxLength}`}}`;
 };
 
-export const rxUsername = (length: number = 3, useDash: boolean = true, useDot: boolean = true): string => {
+export const rxUsername = (
+    length: number = 3,
+    useDash: boolean = true,
+    useDot: boolean = true,
+    startWithChar: boolean = true,
+    endWithChar: boolean = true,
+): string => {
     if (length < 3) throw new Error('length must be equal or bigger than 3');
-    return `[a-z]{1}[a-z0-9${useDash ? '-' : ''}${useDot ? '.' : ''}]{${length - 2},}[a-z]{1}`;
+    const middleLength: number = length - (startWithChar ? 1 : 0) - (endWithChar ? 1 : 0);
+    const middle: string = `[a-z0-9${useDash ? '-' : ''}${useDot ? '.' : ''}]{${middleLength},}`;
+    return `${startWithChar ? '[a-z]{1}' : ''}${middle}${endWithChar ? '[a-z]{1}' : ''}`;
 };
 
 export const rxPassword = (

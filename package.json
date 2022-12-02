@@ -1,6 +1,6 @@
 {
-    "name": "regex-library",
-    "version": "2.2.1",
+    "name": "@webilix/regex-library",
+    "version": "1.0.0",
     "description": "Regular expression library",
     "main": "./dist/index.js",
     "scripts": {

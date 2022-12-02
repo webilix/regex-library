@@ -1,4 +1,4 @@
-# regex-library
+# @webilix/regex-library
 
 Regular expression library
 
@@ -12,13 +12,13 @@ Regular expression library
 ## Installation
 
 ```bash
-npm install --save regex-library
+npm install --save @webilix/regex-library
 ```
 
 ## Usage
 
 ```typescript
-import { RegX } from 'regex-library';
+import { RegX } from '@webilix/regex-library';
 RegX.DATE.verify('2000-01-01');
 ```
 

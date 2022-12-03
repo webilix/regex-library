@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.rxIP4 = exports.rxUrl = exports.rxDomain = exports.rxPassword = exports.rxUsername = exports.rxNumeric = exports.rxMobile = exports.rxEmail = exports.rxJsonDate = exports.rxTime = exports.rxDate = void 0;
+exports.rxHexColor = exports.rxIP4 = exports.rxUrl = exports.rxDomain = exports.rxPassword = exports.rxUsername = exports.rxNumeric = exports.rxMobile = exports.rxEmail = exports.rxJsonDate = exports.rxTime = exports.rxDate = void 0;
 exports.rxDate = `[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])`;
 exports.rxTime = `([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]`;
 exports.rxJsonDate = exports.rxDate + `T` + exports.rxTime + `.[0-9][0-9][0-9]Z`;
@@ -47,4 +47,5 @@ exports.rxIP4 = `(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.` +
     `(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.` +
     `(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.` +
     `(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)`;
+exports.rxHexColor = `#([0-9a-fA-F]{3}){1,2}`;
 //# sourceMappingURL=regex.js.map

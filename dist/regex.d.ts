@@ -9,4 +9,5 @@ export declare const rxPassword: (length?: number, forceLowerCase?: boolean, for
 export declare const rxDomain: string;
 export declare const rxUrl: (full?: boolean) => string;
 export declare const rxIP4: string;
+export declare const rxHexColor: string;
 //# sourceMappingURL=regex.d.ts.map

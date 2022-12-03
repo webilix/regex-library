@@ -1,6 +1,7 @@
 import { DATE } from './lib/date';
 import { DOMAIN } from './lib/domain';
 import { EMAIL } from './lib/email';
+import { HEX_COLOR } from './lib/hex-color';
 import { IP4 } from './lib/ip4';
 import { JSON_DATE } from './lib/json-date';
 import { MOBILE } from './lib/mobile';
@@ -14,6 +15,7 @@ export const RegX = {
     DATE,
     DOMAIN,
     EMAIL,
+    HEX_COLOR,
     IP4,
     JSON_DATE,
     MOBILE,
